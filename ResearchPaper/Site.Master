@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/icon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -52,8 +52,8 @@
                     <ul class="nav navbar-nav">
                       
                         <li><a runat="server" href="~/insert.aspx">Insert</a></li>
+                       <li><a runat="server" href="~/SheetPrepair.aspx">Make Sheet</a></li>
                        
-                        <li><a runat="server" href="~/author.aspx">Author</a></li>
                         <li><a runat="server" href="~/user.aspx">USER</a></li>
                         
                          <li><a runat="server" href="~/Contact">Contact</a></li>
@@ -82,7 +82,10 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mugda</p>
+                <div class="animantion">
+                    <span>Site Devlop by: Sabbir Islam Mugda , Nusrat Jahan</span>
+                </div>
+                <p>&copy; <%: DateTime.Now.Year %>Department of Software Engineering , DIU</p>
             </footer>
         </div>
     </form>
