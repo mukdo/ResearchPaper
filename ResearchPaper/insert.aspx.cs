@@ -23,6 +23,13 @@ namespace ResearchPaper
 
         protected void insert_Button_Click(object sender, EventArgs e)
         {
+            //string count = @"select count(ResearchTiltle) FROM input_paper where (ResearchTiltle = '" + research_tilte_TextBox.Text + "' ) ";
+            //da.GetData(count);
+            //int countConvertInt = Int32.Parse(count);
+            // if(countConvertInt > 0)
+            // {
+            //       Response.Write("<script LANGUAGE ='JavaScript'>alert('More than One Title are Same')</script>)");
+            //  }
             string query = @"insert into input_paper ([AuthorList],[ResearchTiltle],[Types],[PubDate],[Indexer],[Semister],[Year],[PubDetails] ) 
                                values('" + Author_TextBox.Text + "','" + research_tilte_TextBox.Text + "','" + types_DropDownList.SelectedItem.Value + "','" + Calendar1.SelectedDate.ToShortDateString() + "','" + index_DropDownList.SelectedItem.Value+ "','" + semister_DropDownList.SelectedItem.Value+ "','" + year_DropDownList.SelectedValue+ "','" + detaies_TextBox.Text + "')";
 
